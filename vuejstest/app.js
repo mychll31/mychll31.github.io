@@ -1,17 +1,17 @@
 new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue.js!',
-    colors:[
-    	{ text: 'red' },
-    	{ text: 'orange' },
-    	{ text: 'yellow' }
-    ]
+    message: 'INPUT PASSWORD',
+    items:[{row:1}, {row:2}, {row:3}, {row:4}, {row:5}],
   },
 
   methods: {
-  	reverseMessage: function(){
-  		alert('hi')
+  	checkPassword: function(){
+      if(this.pass == 'asdf'){
+        window.location.href = 'main.html'
+      }else{
+        this.message = "TRY AGAIN GIRL!"
+      }
   	}
   }
 })
