@@ -1,2 +1,17 @@
+setup git repository
 
-wersdf
+1. sudo apt-get install git-core
+2. ssh-keygen -t rsa
+3. cat ~/.ssh/id_rsa.pub | ssh <sshUsername>@<ip> "mkdir -p ~/.ssh && cat >>  ~/.ssh/<filename[no extension]>"
+4. mkdir -p /home/swapnil/project-1.git //create folder
+5. cd to [no.4]
+6. git init --bare path/to/project-1.git
+
+
+Clone:
+git clone ssh://<sshUsernmae>@<ip>/path/to/project-1.git
+
+refs:
+https://www.linux.com/learn/how-run-your-own-git-server
+https://www.digitalocean.com/community/questions/fatal-error-not-a-git-repository-git
+http://stackoverflow.com/questions/10391522/git-does-not-appear-to-be-a-git-repository
